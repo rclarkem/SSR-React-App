@@ -1,0 +1,47 @@
+{
+	"name": "react-ssr",
+	"version": "1.0.0",
+	"description": "Server side rendering project",
+	"main": "server_proxy.js",
+	"scripts": {
+		"dev:server": "npx nodemon --watch build --exec \"node build/bundle.js\"",
+		"dev:build:server": "NODE_ENV=development webpack --config webpack.server.js --watch",
+		"dev:build:client": "NODE_ENV=development webpack --config webpack.client.js --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/core": "^7.14.6",
+		"@babel/preset-env": "^7.14.7",
+		"@babel/preset-react": "^7.14.5",
+		"@babel/register": "^7.14.5",
+		"axios": "0.21.1",
+		"babel-cli": "6.26.0",
+		"babel-loader": "8.2.2",
+		"compression": "1.7.4",
+		"concurrently": "6.2.0",
+		"dotenv": "^10.0.0",
+		"express": "4.17.1",
+		"express-http-proxy": "1.6.2",
+		"ignore-styles": "^5.0.1",
+		"lodash": "4.17.21",
+		"nodemon": "2.0.12",
+		"npm-run-all": "4.1.5",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-helmet": "6.1.0",
+		"react-redux": "7.2.4",
+		"react-router-config": "5.1.1",
+		"react-router-dom": "5.2.0",
+		"redux": "4.1.0",
+		"redux-thunk": "2.3.0",
+		"serialize-javascript": "6.0.0",
+		"webpack": "5.44.0",
+		"webpack-dev-server": "3.11.2",
+		"webpack-merge": "5.8.0",
+		"webpack-node-externals": "3.0.0"
+	},
+	"devDependencies": {
+		"webpack-cli": "^4.7.2"
+	}
+}
