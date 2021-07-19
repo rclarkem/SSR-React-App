@@ -1,3 +1,4 @@
+// Helper for server_proxy
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Home from '../frontend/components/Home';
