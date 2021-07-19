@@ -14,6 +14,7 @@ const config = {
 		path: path.resolve(__dirname, 'build'),
 	},
 
+	// devtool: 'source-map',
 	mode: process.env.NODE_ENV,
 	externals: [webpackNodeExternals()],
 };
