@@ -1,4 +1,5 @@
 import express from 'express';
+import 'babel-polyfill';
 import renderer from './helpers/renderes';
 const app = express();
 import createStore from './helpers/serverStore/index';
