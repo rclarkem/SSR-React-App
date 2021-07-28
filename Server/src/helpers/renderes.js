@@ -4,12 +4,13 @@ import { renderToString } from 'react-dom/server';
 import Routes from '../frontend/Routes';
 import { StaticRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { renderRoutes } from 'react-router-config';
 
 export default (req, store) => {
 	const content = renderToString(
 		<Provider store={store}>
 			<StaticRouter location={req.path} context={{}}>
-				<Routes />
+				<div>{renderRoutes(Routes)}</div>
 			</StaticRouter>
 		</Provider>
 	);

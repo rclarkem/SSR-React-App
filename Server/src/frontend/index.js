@@ -9,6 +9,7 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { Provider } from 'react-redux';
 import reducers from './frontendStore/reducers/index';
+import { renderRoutes } from 'react-router-config';
 
 const middleware = [thunk];
 if (process.env.NODE_ENV === 'development') {
@@ -27,7 +28,7 @@ const store = createStore(reducers, {}, devtools);
 ReactDOM.hydrate(
 	<Provider store={store}>
 		<BrowserRouter>
-			<Routes />
+			<div>{renderRoutes(Routes)}</div>
 		</BrowserRouter>
 	</Provider>,
 	document.getElementById('root')
