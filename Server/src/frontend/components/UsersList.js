@@ -25,8 +25,8 @@ const mapStateToProps = ({ users }) => {
 	};
 };
 
-const loadData = () => {
-	console.log('load data');
+const loadData = (store) => {
+	return store.dispatch(fetchUsers());
 };
 
 export { loadData };
