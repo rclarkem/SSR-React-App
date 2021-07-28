@@ -7,7 +7,7 @@ const config = {
 	// bundle for nodejs
 	externalsPresets: { node: true },
 	// webpack where the root file of our server application
-	entry: './src/server_proxy.js',
+	entry: './src/proxy/server_index.js',
 	// webpack where to put output file that is generated
 	output: {
 		filename: 'bundle.js',

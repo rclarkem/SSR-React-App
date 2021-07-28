@@ -1,7 +1,7 @@
 // Helper for server_proxy
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import Routes from '../frontend/Routes';
+import Routes from '../../frontend/Routes';
 import { StaticRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { renderRoutes } from 'react-router-config';

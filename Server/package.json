@@ -2,7 +2,7 @@
 	"name": "react-ssr",
 	"version": "1.0.0",
 	"description": "Server side rendering project",
-	"main": "server_proxy.js",
+	"main": "server_index.js",
 	"scripts": {
 		"dev": "npm-run-all --parallel dev:*",
 		"dev:server": "npx nodemon --watch build --exec \"node build/bundle.js\"",
