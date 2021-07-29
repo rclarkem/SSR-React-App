@@ -23,7 +23,7 @@ const devtools =
 		? applyMiddleware(...middleware)
 		: composeEnhancer;
 
-const store = createStore(reducers, {}, devtools);
+const store = createStore(reducers, window.INITIAL_STATE, devtools);
 
 ReactDOM.hydrate(
 	<Provider store={store}>
