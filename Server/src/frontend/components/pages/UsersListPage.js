@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchUsers, test } from '../frontendStore/actions/user';
+import { fetchUsers, test } from '../../frontendStore/actions/user';
 
 const UsersList = ({ fetchUsers, users }) => {
 	useEffect(() => {
@@ -29,6 +29,7 @@ const loadData = (store) => {
 	return store.dispatch(fetchUsers());
 };
 
-export { loadData };
-
-export default connect(mapStateToProps, { fetchUsers })(UsersList);
+export default {
+	loadData,
+	component: connect(mapStateToProps, { fetchUsers })(UsersList),
+};
