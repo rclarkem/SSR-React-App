@@ -10,8 +10,13 @@ import logger from 'redux-logger';
 import { Provider } from 'react-redux';
 import reducers from './frontendStore/reducers/index';
 import { renderRoutes } from 'react-router-config';
+import axios from 'axios';
 
-const middleware = [thunk];
+const axiosInstance = axios.create({
+	baseURL: '/api',
+});
+
+const middleware = [thunk.withExtraArgument(axiosInstance)];
 if (process.env.NODE_ENV === 'development') {
 	middleware.push(logger);
 }
