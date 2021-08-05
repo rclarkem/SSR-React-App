@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Home = () => {
+const Notfound = () => {
 	return (
 		<div className='center-align' style={{ marginTop: '200px' }}>
-			<h3>Welcome!</h3>
-			<p>Check this out</p>
+			<h4> 404 | Page Not Found</h4>
 		</div>
 	);
 };
 
 export default {
-	component: Home,
+	component: Notfound,
 };
