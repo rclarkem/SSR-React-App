@@ -22,7 +22,7 @@ const Header = ({ auth }) => {
 						<Link to='/users'>Users</Link>
 					</li>
 					<li>
-						<Link to='/admin'>Admin</Link>
+						<Link to='/admins'>Admin</Link>
 					</li>
 					<li>{authButt}</li>
 				</ul>

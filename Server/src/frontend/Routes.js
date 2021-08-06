@@ -10,7 +10,7 @@ export default [
 		...NavHeader,
 		routes: [
 			{ path: '/', ...HomePage, exact: true },
-			{ path: '/users', ...UsersListPage, exact: true },
+			{ path: '/users', ...UsersListPage },
 			{ ...Notfound },
 		],
 	},
