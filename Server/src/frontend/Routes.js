@@ -3,7 +3,7 @@ import NavHeader from './NavHeader';
 import HomePage from './components/pages/HomePage';
 import UsersListPage from './components/pages/UsersListPage';
 import Notfound from './components/pages/Notfound';
-Notfound;
+import AdminPage from './components/pages/AdminPage';
 
 export default [
 	{
@@ -11,6 +11,7 @@ export default [
 		routes: [
 			{ path: '/', ...HomePage, exact: true },
 			{ path: '/users', ...UsersListPage },
+			{ path: '/admins', ...AdminPage },
 			{ ...Notfound },
 		],
 	},

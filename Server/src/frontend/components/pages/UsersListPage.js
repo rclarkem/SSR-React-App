@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchUsers, test } from '../../frontendStore/actions/user';
+import { fetchUsers } from '../../frontendStore/actions/user';
 
 const UsersList = ({ fetchUsers, users }) => {
 	useEffect(() => {
