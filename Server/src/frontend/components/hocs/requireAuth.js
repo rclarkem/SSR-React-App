@@ -6,7 +6,7 @@ export default (ChildComp) => {
 	const RequireAuth = (props) => {
 		switch (props.auth) {
 			case false:
-				return <Redirect to='/' />;
+				return <Redirect to='/api/auth/google' />;
 			case null:
 				return <div>Loading....</div>;
 			default:

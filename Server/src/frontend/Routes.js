@@ -15,4 +15,5 @@ export default [
 			{ ...Notfound },
 		],
 	},
+	{ path: '/login' },
 ];

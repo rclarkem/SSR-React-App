@@ -1,4 +1,5 @@
 import React from 'react';
+import requireAuth from '../hocs/requireAuth';
 
 const Home = () => {
 	return (
@@ -10,5 +11,5 @@ const Home = () => {
 };
 
 export default {
-	component: Home,
+	component: requireAuth(Home),
 };
